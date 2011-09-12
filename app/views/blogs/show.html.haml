@@ -1,0 +1,11 @@
+%p#notice= notice
+%p
+  %b Title:
+  = @blog.title
+%p
+  %b Description:
+  = @blog.description
+
+= link_to 'Edit', edit_blog_path(@blog)
+or
+= link_to 'Back', blogs_path
